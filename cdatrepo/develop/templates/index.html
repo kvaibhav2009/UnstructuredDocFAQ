@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="no-js"  lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Accenture AI Logo">
+        </div>
+        <div class="top-right">
+            Sol.Plan and Contract Gaps Analyzer
+        </div>
+    </header>
+    <div class="Absolute-Center is-Responsive">
+        <form class="md-form left-gap" id="data">
+            <div class="h6 mb-4 text-center font-weight-bold color-white">File Upload</div>
+            <span class="fileHeading color-white">Please upload the SOW as word document</span>
+            <div class="md-form">
+                <input name="file" type="file" id="file1" value="Choose a video please" />
+            </div>
+            <div class="md-form">
+                <div id="myProgress">
+                    <div id="myBar"></div>
+                </div>
+            </div>
+            <p class="h6 mb-4 text-center font-weight-bold color-white">Select From</p>
+            <div class="md-form">
+                <button class="btn btn-danger btn-sm dropdown-toggle multiSel" id="btntxt" type="button" data-toggle="dropdown">
+                    Please select from the list
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">
+                        <input type="checkbox" name="keys[]" value="Liability">
+                        <div class="row inputWrapper">
+                            <span>Liability: Are there No Limitation on Direct Damages OR</span>
+                            <span>any Indirect/ Consequential Damages Disclaimer in the</span>
+                            <span>contract?</span>
+                        </div>
+
+
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <input type="checkbox" name="keys[]" value="Benchmarking">
+                        <div class="row inputWrapper">
+                            <span>Benchmarking: Is the provisions related to benchmarking </span>
+                            <span>adequately addressed in contract and solution?</span>
+
+                        </div>
+
+
+                    </a>
+                </div>
+            </div>
+            <span id="downloadSpan">
+                <input type="checkbox" id="downCheck" name="downloadfile" value="True" style="display:inline-block !important" /> Please select the checkbox to download
+                the output
+            </span>
+            <input type="submit" value="Find Gaps" class="btn btn-indigo" align="center">
+            
+        </form>
+
+    </div>
+
+    <img src="img/load.gif" id="loader">
+    <div id="outputBox" style="display:none;">
+
+        <div class="outputContainer">
+            <div class="color-white">Output Results</div>
+            <div class="color-white">Please find below the gap analysis for uploaded SOW</div>
+        </div>
+        <div class="me_msg">
+
+
+
+        </div>
+        <div class="feedback Absolute-Center is-Responsive">
+            <div class="">
+                <a href="https://13.232.229.71/user/vaibhav.vijay.kotwal/files/CDAT_Flask/OutputSection/AI%20Sample%20%20duration%20conflict.docx_section.csv?download=1" target="_blank" id="downloadbtn" class="downloadXls" style="display: none;">Download xlsx</a>
+            </div>
+            <div align="center">
+                <select name="value" id="outputvalue">
+                    <option value="">Show Value</option><br />
+                    <option value="Liability">Liability</option><br />
+                    <option value="Benchmarking">Benchmarking</option><br />
+                </select>
+
+            </div>
+
+            <span>
+                <b>Category:</b>
+            </span>
+            <span id="gap">Dynamic Text</span>
+            
+            <br/></br>
+            <span>
+                <b>Requirement:</b>
+            </span>
+            <span id="requirement">Dynamic Text</span>
+            <br/></br>
+
+            <div id="pageresponse">
+
+            </div>
+
+
+
+            <br/></br>
+            <span id="reason">Dynamic Text</span>
+        </div>
+    </div>
+    <div id="copyright">@2018 Accenture.All Rights Reserved</div>
+    </div>
+</body>
+
+</html>
+<!-- SCRIPTS -->
+<!-- JQuery -->
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/main.js"></script>
