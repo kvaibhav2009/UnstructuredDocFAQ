@@ -16,7 +16,7 @@ click==6.7
 cloudpickle==0.5.3
 constantly==15.1.0
 corenlp==0.0.14
-cryptography==2.2.2
+cryptography==3.2
 cycler==0.10.0
 cymem==1.31.2
 Cython==0.28.2
