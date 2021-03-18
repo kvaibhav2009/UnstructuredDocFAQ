@@ -71,7 +71,7 @@ packaging==17.1
 pandas==0.22.0
 pandasql==0.7.3
 pathlib==1.0.1
-Pillow==5.1.0
+Pillow==8.1.1
 plac==0.9.6
 preshed==0.46.4
 protobuf==3.5.2.post1
