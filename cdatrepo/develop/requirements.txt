@@ -48,7 +48,7 @@ inflect==0.2.5
 inflection==0.3.1
 itsdangerous==0.24
 jdcal==1.4
-Jinja2==2.10
+Jinja2==2.11.3
 jmespath==0.9.3
 jsonschema==2.6.0
 Keras==2.1.5
