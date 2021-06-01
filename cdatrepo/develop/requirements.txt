@@ -124,7 +124,7 @@ Twisted==18.4.0
 typing==3.6.4
 ujson==1.35
 unipath==1.1
-urllib3==1.22
+urllib3==1.26.5
 Werkzeug==0.14.1
 wikipedia==1.4.0
 -e git+https://github.com/gutfeeling/word_forms.git@4e1d76fa1aa64399c5f6152263788d4293bfb050#egg=word_forms
