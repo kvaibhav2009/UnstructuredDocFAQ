@@ -39,7 +39,7 @@ grpcio==1.11.0
 guesser==0.0.1
 h5py==2.7.1
 helper==2.4.2
-html5lib==0.9999999
+html5lib==0.99999999
 hyperlink==18.0.0
 idna==2.6
 importlib==1.0.4
