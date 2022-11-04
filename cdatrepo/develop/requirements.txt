@@ -120,7 +120,7 @@ thinc==5.0.8
 tika==1.16
 toolz==0.9.0
 tqdm==4.23.0
-Twisted==18.4.0
+Twisted==22.10.0
 typing==3.6.4
 ujson==1.35
 unipath==1.1
